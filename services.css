@@ -1,0 +1,81 @@
+/* Section Services */
+.services {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+/* Titre principal */
+.services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Conteneur principal des statistiques */
+.stat-container {
+    display: grid;
+    grid-template-areas:
+        "right-top right-top"
+        "left right-bottom";
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    align-items: center; 
+    justify-content: end; 
+}
+
+/* Définir chaque zone */
+.stat-container .stat-light-blue {
+    grid-area: left; 
+}
+
+.stat-container .stat-dark {
+    grid-area: right-top; 
+}
+
+.stat-container .stat-medium-blue {
+    grid-area: right-bottom; 
+}
+
+
+.stat-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+/* Effet au survol */
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Couleurs spécifiques */
+.stat-light-blue {
+    background-color: #00aaff; 
+}
+
+.stat-dark {
+    background-color: #001f4d; /
+}
+
+.stat-medium-blue {
+    background-color: #0077cc; 
+}
+
+/* Chiffres principaux */
+.stat-box h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texte des statistiques */
+.stat-box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
